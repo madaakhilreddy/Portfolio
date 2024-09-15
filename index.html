@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e43f49dc4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Education</a></li>
+                <!-- <li><a href="#portfolio">Skill & Work</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-database" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="font1">Front End & Python Developer</p>
+            <h1>Hi, I'm <span>Akhil Reddy</span> <br> </h1>
+            <h3>From Hyderabad</h3>
+        </div>
+    </div>
+</div>
+<!--------------------------------about---------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Akhil Reddy Mada, a passionate programmer with a solid foundation in front-end, specializing in Python. I hold a degree in engineering from Gokaraju Rangaraju Institute of Engineering and Technology, with hands-on experience in AI/ML basics, geospatial projects, and full-stack development, eager to kick-start my career.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Internships</p>
+                    <p class="tab-links" onclick="opentab('Education')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('Certificates')">Certificates</p>
+                
+                </div>
+                
+                <div class="tab-contents active-tab" id="Skills">
+                    
+                    <ul>
+                        <li><span>2024-present</span><br>Post Graduation in Information Technology from IIIT Hyderabad</li>
+                        <li><span>2023</span><br>Graduation in Civil Engineering from Gokaraju Rangaraju College</li>
+                        <li><span>2019</span><br>Intermediate in MPC from Narayana Junior College</li>
+                        <li><span>2017</span><br>Schooling in SSC board from Siddartha High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2024</span><br>Full Stack Developer on Nxt Academy</li>
+                        <li><span>2022</span><br>Programming with Python by Internshala</li>
+                        <li><span>2022</span><br>M/S Soma Srinivas Reddy Engineers And Contractors as part of my degree</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Python</span><br></li>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                        <li><span>SQL</span><br></li>
+                        <li><span>AI & ML</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Projects">
+                    <ul>
+                        <li><span>2023</span><br>An Integrated Remote Sensing and GIS Approach to
+                            Identifying and Ranking Landfill Sites for Municipal
+                            Solid Waste Management</li>
+                        <li><span>2023</span><br>Site Selection For Rainwater Harvesting Structures
+                            Using Geospatial Techniques</li>
+                        <li><span>2022</span><br>Design of Bus Rapid Transit Running Ways</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Certificates">
+                    <ul>
+                        <li><span>2023</span><br>Build Your Own Responsive Website</li>
+                        <li><span>2023</span><br>Build Your Own Static Website</li>
+                        <li><span>2022</span><br>IOT Projects - Basic Building Blocks - GRIET IOT Team
+                            Associated with JYO SYSTEMS</li>
+                        <li><span>2022</span><br>Safety in Construction</li>  
+                        <li><span>2021</span><br>Project Planning and Control</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------services---------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-end and back-end designing</h2>
+                <p>Elegant and visually appealing designs with interfaces that are intuitive, efficient, and enjoyable for users to navigate.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Competative Programming</h2>
+                <p>Python programming is my expertise, and I harness its versatility to build efficient, scalable solutions. From designing intuitive interfaces to optimizing backend systems, I am dedicated to pushing the limits of what’s achievable in technology.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>AI/ML Programmer</h2>
+                <p>As an AI/ML programmer, I specialize in developing algorithms and writing code that enables machines to mimic human behavior.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------portfolio---------------------------------->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>the sznsdlk skgjzsi silgjfzs igmi ijgijsi rrgijasiji sgijijg
+                    agsrrgsjgh jkhsj ghjjjghzshgsgsjg</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>the sznsdlk skgjzsi silgjfzs igmi ijgijsi rrgijasiji sgijijg
+                    agsrrgsjgh jkhsj ghjjjghzshgsgsjg</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>the sznsdlk skgjzsi silgjfzs igmi ijgijsi rrgijasiji sgijijg
+                    agsrrgsjgh jkhsj ghjjjghzshgsgsjg</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    <a href="#" class="btn">See more</a> -->
+    <!-- </div>
+</div> -->
+<!--------------------------------portfolio---------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-regular fa-paper-plane"></i>madaakhilreddy@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7995828850</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akhil-reddy-mada-75407425b"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/madaakhilreddy"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/akhil.nani.104418"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="........"><i class="fa-brands fa-x-twitter"></i></a> -->
+                    <a href="https://www.instagram.com/akhil_nani_8/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    
+                    
+                </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© All Rights Reserved By - Akhil Reddy</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <!-- <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+      </form>
+      
+      <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbzl6QH8u3iZeIYXRWIe4hSJ1qRYWaxn3CzLe3rVRU0_QkvzvLiHjh990pqDHWHmXeRD/exec>'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+
+</body>
+</html>
